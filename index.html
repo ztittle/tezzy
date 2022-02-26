@@ -1,0 +1,77 @@
+<html>
+<head>
+  <title>Tezzy</title>
+  <meta name="description" content="Apps for Tesla" />
+  <style>
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      background-color: black;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  .container {
+    padding: 0 2rem;
+  }
+
+  .main {
+    min-height: 100vh;
+    padding: 4rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+  }
+
+  .grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+  }
+
+  .card {
+    margin: 1rem;
+  }
+
+  @media (max-width: 600px) {
+    .grid {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+
+  .fab_fullscreen {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    filter: invert(100%);
+  }
+  </style>
+</head>
+
+<main class="main">
+  <div class="grid">
+    <a href="https://stadia.google.com/" class="card">
+      <img src="/icons/stadia.png" alt="Stadia" width="300" height="150" style="object-fit:'contain'"/>
+    </a>    
+    <a href="https://retrogames.cc/" class="card">
+      <img src="/icons/retro-games.png" alt="Retro Games" width="300" height="150" style="object-fit:'contain'"/>
+    </a>
+  </div>
+</main>
+<a class="fab_fullscreen" href="https://youtube.com/redirect?q=http://localhost:3000/">
+  <img src="/icons/full-screen.svg" alt="Full Screen" width="100" height="100"/>
+</a>
+</html>
